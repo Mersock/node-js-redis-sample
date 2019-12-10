@@ -1,0 +1,31 @@
+<h1>ADD users</h1>
+<form  method="POST" action="/user/add">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>ID</label>
+            <input type="text" name="id" id="id" class="form-control" placeholder="ADD ID">
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+        </div>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+        </div>
+        <button class="btn btn-primary">Save</button>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+<h1>Search users</h1>
+<form method="POST" action="/user/search">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <input type="text" name="id" id="id" class="form-control" placeholder="Search Users">
+            {{#if error}}
+            <small id="error-message" class="form-text text-muted">{{error}}</small>
+            {{/if}}
+        </div>
+        <button class="btn btn-primary">Search</button>
+    </div>
+</form>

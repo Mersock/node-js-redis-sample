@@ -2,6 +2,7 @@ version: '3.7'
 services: 
     app:
         build:  .
+        container_name: node-js-redis
         ports: 
             - "8082:3000"
         volumes: 
@@ -10,5 +11,6 @@ services:
         command: ["npm","start"]    
     redis-app:
         image: redis:5.0.7        
+        container_name: node-js-redis-server
         ports: 
             - "6479:6379"
